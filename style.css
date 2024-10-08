@@ -1,4 +1,132 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Definindo a fonte padrão da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Aplicando a fonte solicitada */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Garantindo que a fonte seja aplicada no body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fa;  /* Fundo cinza claro para dar contraste */
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;  /* Bordas arredondadas mais fortes */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);  /* Sombra mais intensa para efeito de elevação */
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);  /* Leve efeito de zoom ao passar o mouse */
+}
+
+h1 {
+    font-size: 28px;  /* Tamanho maior para o título */
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 600;
+    letter-spacing: 1px;  /* Aumenta o espaçamento entre as letras para um efeito mais moderno */
+}
+
+.descricao {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #666;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;  /* Cor de fundo suave para os inputs */
+    transition: all 0.3s ease;
+    margin-bottom: 15px;  /* Espaçamento entre os campos */
+}
+
+.input:focus {
+    border-color: #4CAF50;  /* Verde claro para o foco */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);  /* Efeito suave de brilho verde */
+    outline: none;
+}
+
+.branco {
+    background-color: #fff;
+}
+
+.cinza {
+    background-color: #f3f3f3;
+}
+
+.verde {
+    background-color: #e8f7e5;  /* Verde mais suave para o campo de quantidade */
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    background-color: #4CAF50;  /* Verde claro para o botão */
+    color: white;
+    border: none;
+    border-radius: 10px;  /* Botão com bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;  /* Verde mais escuro no hover */
+    transform: translateY(-2px);  /* Efeito de levitação */
+}
+
+button:active {
+    background-color: #388e3c;  /* Verde ainda mais escuro no clique */
+    transform: translateY(2px);  /* Leve efeito de pressionamento */
+}
+
+.resultado {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
